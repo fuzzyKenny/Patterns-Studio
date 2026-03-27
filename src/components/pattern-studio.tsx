@@ -93,7 +93,7 @@ function RangeRow({
             transition={{ type: "spring", stiffness: 260, damping: 24 }}
           />
           <motion.div
-            className="absolute top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"
+            className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"
             animate={{ left: `${progress}%` }}
             transition={{ type: "spring", stiffness: 260, damping: 24 }}
           />
@@ -371,14 +371,14 @@ export function PatternStudio() {
               label="Rows"
               value={rows}
               min={2}
-              max={28}
+              max={30}
               onChange={setRows}
             />
             <RangeRow
               label="Items per row"
               value={itemsPerRow}
               min={4}
-              max={48}
+              max={50}
               onChange={setItemsPerRow}
             />
             <RangeRow
@@ -420,7 +420,7 @@ export function PatternStudio() {
               label="Pattern frequency"
               value={frequency}
               min={0.1}
-              max={2.4}
+              max={2}
               step={0.01}
               onChange={setFrequency}
               formatValue={(value) => value.toFixed(2)}
@@ -429,7 +429,7 @@ export function PatternStudio() {
               label="Row shift"
               value={rowShift}
               min={0}
-              max={2.4}
+              max={2}
               step={0.01}
               onChange={setRowShift}
               formatValue={(value) => value.toFixed(2)}
@@ -447,7 +447,7 @@ export function PatternStudio() {
               label="Radial frequency"
               value={radialFrequency}
               min={1}
-              max={24}
+              max={20}
               onChange={setRadialFrequency}
             />
             <RangeRow
@@ -463,7 +463,7 @@ export function PatternStudio() {
               label="Animation speed"
               value={animationSpeed}
               min={0.1}
-              max={3}
+              max={4}
               step={0.01}
               onChange={setAnimationSpeed}
               formatValue={(value) => `${value.toFixed(2)}x`}
