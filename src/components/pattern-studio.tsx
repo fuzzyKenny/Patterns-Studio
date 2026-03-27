@@ -280,7 +280,7 @@ export function PatternStudio() {
             transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
             ref={previewRef}
             onPointerDown={triggerPreviewShockwave}
-            className="group relative z-10 w-full cursor-crosshair overflow-hidden border border-white/10 bg-black shadow-[0_30px_80px_rgba(0,0,0,0.48)]"
+            className="group relative z-10 w-full cursor-crosshair overflow-hidden bg-black shadow-[0_30px_80px_rgba(0,0,0,0.48)]"
           >
             <PatternBackground
               rows={rows}
