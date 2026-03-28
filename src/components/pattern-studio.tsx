@@ -289,12 +289,12 @@ export function PatternStudio() {
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <StudioHeader className="shrink-0" />
-      <section className="grid min-h-0 flex-1 overflow-hidden xl:grid-cols-[minmax(0,1fr)_22rem]">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
-          className="relative flex min-h-0 flex-col overflow-hidden border-b border-white/10 xl:border-b-0 xl:border-r"
+    <section className="grid min-h-0 flex-1 xl:overflow-hidden xl:grid-cols-[minmax(0,1fr)_22rem]">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+        className="relative flex min-h-[50svh] flex-col border-b border-white/10 xl:min-h-0 xl:overflow-hidden xl:border-b-0 xl:border-r"
         >
           <div className="relative flex flex-1 items-center justify-center overflow-hidden bg-black p-4 sm:p-6 lg:p-8">
             <motion.div
@@ -335,13 +335,13 @@ export function PatternStudio() {
           </div>
         </motion.div>
 
-        <motion.aside
-          initial={{ opacity: 0, x: 18 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.48, delay: 0.08, ease: "easeOut" }}
-          className="flex min-h-0 flex-col overflow-hidden bg-black"
-        >
-          <div className="studio-scroll min-h-0 flex-1 overflow-y-auto pt-3">
+      <motion.aside
+        initial={{ opacity: 0, x: 18 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.48, delay: 0.08, ease: "easeOut" }}
+        className="flex min-h-0 flex-col bg-black xl:overflow-hidden"
+      >
+        <div className="min-h-0 flex-1 pt-3 xl:studio-scroll xl:overflow-y-auto">
             <InspectorSection title="Pattern">
               <SelectRow
                 label="Pattern"
